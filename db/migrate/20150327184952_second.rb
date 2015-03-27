@@ -1,4 +1,5 @@
-def change
+class Second < ActiveRecord::Migration
+  def change
     create_table :keys2 do |t|
       t.string :Company
       t.text :Description
@@ -7,7 +8,5 @@ def change
 
       t.timestamps
     end
-  endclass Second < ActiveRecord::Migration
-  def change
   end
 end
